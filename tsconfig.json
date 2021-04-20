@@ -1,0 +1,23 @@
+{
+  "include": [".*.js", "*.js", "packages/**/*.ts"],
+  "exclude": [],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "rootDir": ".",
+    "isolatedModules": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {},
+    "esModuleInterop": true,
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
