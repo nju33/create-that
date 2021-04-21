@@ -10,9 +10,10 @@ module.exports = {
     jest: true,
     browser: true
   },
-  extends: ['standard-with-typescript', 'prettier'],
+  extends: ['standard-with-typescript', 'standard-react', 'prettier'],
   plugins: [
     'testing-library',
+    'react-hooks',
     'simple-import-sort',
     'sort-destructure-keys',
     'tsdoc'
@@ -25,7 +26,9 @@ module.exports = {
       {
         groups: [['^\\u0000', '^@?\\w', '^[^.]', '^\\.']]
       }
-    ]
+    ],
+    // Resolve error: unable to load resolver "node".eslintimport/no-duplicates
+    "import/no-duplicates": 'off'
   },
   overrides: [
     {

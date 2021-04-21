@@ -1,0 +1,11 @@
+{
+  "name": "components",
+  "private": true,
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "ink": "^3.0.8",
+    "log-symbols": "^5.0.0",
+    "react": "^17.0.2",
+    "term-size": "^2.2.1"
+  }
+}

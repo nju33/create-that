@@ -3,7 +3,8 @@
   "exclude": [],
   "compilerOptions": {
     "target": "es6",
-    "module": "esnext",
+    "module": "commonjs",
+    "jsx": "react",
     "rootDir": ".",
     "isolatedModules": true,
     "strict": true,

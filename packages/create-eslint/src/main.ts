@@ -1,1 +1,3 @@
-export default {}
+import {a} from './a'
+
+a()
