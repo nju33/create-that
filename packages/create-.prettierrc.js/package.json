@@ -1,6 +1,6 @@
 {
-  "name": "@nju33/create-.eslintrc.js",
-  "version": "0.0.1-5",
+  "name": "@nju33/create-.prettierrc.js",
+  "version": "0.0.1-0",
   "bin": "out/bin.js",
   "publishConfig": {
     "access": "public"

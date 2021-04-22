@@ -1,5 +1,4 @@
-import deepmerge from 'deepmerge'
-import { PartialGenerator } from './interfaces'
+import { extendPartialBy } from '@nju33/create-__helpers'
 
 export const configAroundNode = {
   dependencies: [],
@@ -10,6 +9,4 @@ export const configAroundNode = {
 }
 }
 
-export  const useNode: PartialGenerator = (previous) => {
-  return deepmerge(previous, configAroundNode)
-}
+export  const useNode = extendPartialBy(configAroundNode)

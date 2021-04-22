@@ -1,1 +1,1 @@
-# create-eslint
+# create-.eslintrc.js

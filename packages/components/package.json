@@ -1,6 +1,6 @@
 {
   "name": "@nju33/create-__components",
-  "version": "0.0.1-1",
+  "version": "0.0.1-4",
   "main": "out/index.js",
   "publishConfig": {
     "access": "public"
@@ -9,7 +9,10 @@
     "out"
   ],
   "scripts": {
-    "build": "tsc"
+    "prebuild": "yarn cleanup",
+    "build": "tsc",
+    "publish": "yarn npm publish",
+    "cleanup": "rm -rf out"
   },
   "dependencies": {
     "figures": "^3.2.0",

@@ -1,5 +1,4 @@
-import deepmerge from 'deepmerge'
-import { PartialGenerator } from './interfaces'
+import { extendPartialBy } from '@nju33/create-__helpers'
 
 export const configAroundBrowser = {
   dependencies: [],
@@ -10,6 +9,4 @@ export const configAroundBrowser = {
   }
 }
 
-export const useBrowser: PartialGenerator = (previous) => {
-  return deepmerge(previous, configAroundBrowser)
-}
+export const useBrowser = extendPartialBy(configAroundBrowser)

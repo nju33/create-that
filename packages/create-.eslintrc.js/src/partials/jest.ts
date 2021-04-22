@@ -1,5 +1,5 @@
-import deepmerge from 'deepmerge'
-import { PartialGenerator } from './interfaces'
+import { extendPartialBy } from '@nju33/create-__helpers'
+
 
 export const configAroundJest = {
   dependencies: ['eslint-plugin-jest'],
@@ -11,6 +11,4 @@ export const configAroundJest = {
   }
 }
 
-export const useJest: PartialGenerator = (previous) => {
-  return deepmerge(previous, configAroundJest)
-}
+export const useJest = extendPartialBy(configAroundJest)

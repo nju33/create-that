@@ -1,5 +1,4 @@
-import deepmerge from 'deepmerge'
-import { PartialGenerator } from './interfaces'
+import { extendPartialBy } from '@nju33/create-__helpers'
 
 export const previousSettings = {
   dependencies: [
@@ -41,6 +40,4 @@ export const previousSettings = {
 }
 }
 
-export const  preprocess: PartialGenerator = (previous) => {
-  return deepmerge(previous, previousSettings)
-}
+export const  preprocess = extendPartialBy(previousSettings)

@@ -17,11 +17,22 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "baseUrl": "./",
-    "paths": {},
+    "paths": {
+      "@nju33/create-__components": ["../components/src/index.ts"],
+      "@nju33/create-__helpers": ["../helpers/src/index.ts"]
+    },
     "esModuleInterop": true,
     // "experimentalDecorators": true,
     // "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "references": [
+    {
+      "path": "../components"
+    },
+    {
+      "path": "../helpers"
+    }
+  ]
 }

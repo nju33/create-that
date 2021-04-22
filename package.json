@@ -1,7 +1,12 @@
 {
   "author": "純 <nju33.ki@gmail.com>",
   "scripts": {
-    "build": ":"
+    "build": ":",
+    "buildAll": "yarn -pt workspaces foreach run build",
+    "publish": ":",
+    "publishAll": "yarn -pt workspaces foreach run publish",
+    "cleanup": ":",
+    "cleanupAll": "yarn -p workspaces foreach run cleanup"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
@@ -40,7 +45,7 @@
   "name": "create-that",
   "private": true,
   "repository": "https://github.com/npju33/create-that.git",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "workspaces": [
     "packages/*"
   ]

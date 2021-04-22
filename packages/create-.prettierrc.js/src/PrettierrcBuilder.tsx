@@ -5,45 +5,21 @@ import React, { useMemo, useState } from 'react'
 import {
   postprocess,
   preprocess,
-  useBrowser,
-  useJest,
-  useNode,
-  useReact,
-  useTypeScript,
-  useWorker
+  useEslint,
+  useTailwindcss,
 } from './partials'
 
 const defaultFlags = [
   {
-    name: 'useTypeScript',
+    name: 'useEslint',
     focused: true,
     choosed: true
   },
   {
-    name: 'useReact',
-    focused: false,
-    choosed: true
-  },
-  {
-    name: 'useJest',
-    focused: false,
-    choosed: true
-  },
-  {
-    name: 'useBrowser',
-    focused: false,
-    choosed: true
-  },
-  {
-    name: 'useNode',
-    focused: false,
-    choosed: true
-  },
-  {
-    name: 'useWorker',
+    name: 'useTailwindcss',
     focused: false,
     choosed: false
-  }
+  },
 ]
 
 function Builder(): React.ReactElement {
@@ -55,23 +31,11 @@ function Builder(): React.ReactElement {
   const { code, installCommand } = useMemo(() => {
     let fns = flagNames.map((name) => {
       switch (name) {
-        case 'useBrowser': {
-          return useBrowser
+        case 'useEslint': {
+          return useEslint
         }
-        case 'useJest': {
-          return useJest
-        }
-        case 'useNode': {
-          return useNode
-        }
-        case 'useReact': {
-          return useReact
-        }
-        case 'useTypeScript': {
-          return useTypeScript
-        }
-        case 'useWorker': {
-          return useWorker
+        case 'useTailwindcss': {
+          return useTailwindcss
         }
         default: {
           throw new Error('unknown flag name')
@@ -83,15 +47,12 @@ function Builder(): React.ReactElement {
 
     const generated = fns.reduce<PartialObject>(
       (acc, fn) => {
-        return fn(acc as any)
+        return fn(acc)
       },
       { settings: {}, dependencies: [] as string[] }
     )
 
     const code = format(`
-/**
- * @type {import('eslint').Linter.Config}
- */
 module.exports = ${JSON.stringify(generated.settings)}
     `)
 
@@ -108,7 +69,7 @@ module.exports = ${JSON.stringify(generated.settings)}
   return (
     <Template
       flags={flags}
-      filename=".eslintrc.js"
+      filename=".prettierrc.js"
       installCommand={installCommand}
       code={code}
       onChooseFlag={(index) => {

@@ -1,5 +1,4 @@
-import deepmerge from 'deepmerge'
-import { PartialGenerator } from './interfaces'
+import { extendPartialBy } from '@nju33/create-__helpers'
 
 export const configAroundWorker = {
   dependencies: [],
@@ -10,6 +9,4 @@ export const configAroundWorker = {
   }
 }
 
-export const useWorker: PartialGenerator = (previous) => {
-  return deepmerge(previous, configAroundWorker)
-}
+export const useWorker = extendPartialBy(configAroundWorker)

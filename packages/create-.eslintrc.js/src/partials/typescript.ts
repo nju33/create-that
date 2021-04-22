@@ -1,5 +1,4 @@
-import deepmerge from 'deepmerge'
-import { PartialGenerator } from './interfaces'
+import { extendPartialBy } from '@nju33/create-__helpers'
 
 export const configAroundTypescript = {
   dependencies: [
@@ -26,6 +25,4 @@ export const configAroundTypescript = {
   }
 }
 
-export const useTypeScript: PartialGenerator = (previous) => {
-  return deepmerge(previous, configAroundTypescript)
-}
+export const useTypeScript = extendPartialBy(configAroundTypescript)
