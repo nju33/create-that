@@ -4,6 +4,7 @@ That is the following like.
 
 - eslint (as `create-.eslintrc.js` package)
 - prettier (as `create-.prettierrc.js` package)
+- commitlint (as `create-.commitlintrc.js` package)
 - husky (as `create-.huskyrc` package)
 - lint-staged (as `create-.lintstagedrc` package)
 
