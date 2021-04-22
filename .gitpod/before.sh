@@ -21,7 +21,7 @@ init_zoxide() {
     if [ ! -d "$HOME/.local/share/zoxide" ]; then
       mkdir -p "$HOME/.local/share/zoxide"
     fi
-
+    
     cp "$GITPOD_REPO_ROOT/.gitpod/zoxide/db.zo" "$HOME/.local/share/zoxide/"
   fi
 }
