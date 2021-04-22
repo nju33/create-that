@@ -28,7 +28,7 @@ module.exports = {
       }
     ],
     // Resolve error: unable to load resolver "node".eslintimport/no-duplicates
-    "import/no-duplicates": 'off'
+    // "import/no-duplicates": 'off'
   },
   overrides: [
     {

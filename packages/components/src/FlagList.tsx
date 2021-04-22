@@ -1,18 +1,55 @@
-import React, {useState, useEffect} from 'react';
-import {Text} from 'ink';
+import figures from 'figures'
+import { Box, Newline, Spacer, Text } from 'ink'
+import React from 'react'
 
-export const FlagList = () => {
-	const [counter, setCounter] = useState(0);
+export interface FlagItem {
+  name: string
+  focused: boolean
+  choosed: boolean
+}
 
-	useEffect(() => {
-		const timer = setInterval(() => {
-			setCounter(previousCounter => previousCounter + 1);
-		}, 100);
+export interface FlagListProps {
+  flags: FlagItem[]
+  focused: boolean
+}
 
-		return () => {
-			clearInterval(timer);
-		};
-	}, []);
+export function FlagList({
+  flags,
+  focused
+}: FlagListProps): React.ReactElement {
+  const flagStringLengths = flags.map(({ name }): number => name.length)
+  const maxWidth = Math.max(...flagStringLengths) + 3 + 2 // symbol + margin
 
-	return <Text color="green">{counter} tests passed</Text>;
-};
+  return (
+    <Box
+      flexDirection="column"
+      width={maxWidth}
+      marginRight={1}
+      marginTop={1}
+      marginBottom={1}>
+      <Box>
+        <Spacer />
+        <Text bold>Flags</Text>
+        <Spacer />
+      </Box>
+
+      <Newline />
+      {flags.map((flag) => {
+        return (
+          <Box key={flag.name}>
+            <Box marginLeft={1} marginRight={1}>
+              <Text {...(flag.choosed ? { color: 'green' } : {})}>
+                {flag.choosed ? figures.circleFilled : figures.circle}
+              </Text>
+            </Box>
+            <Text
+              underline={focused && flag.focused}
+              {...(flag.choosed ? { color: 'green' } : {})}>
+              {flag.name}
+            </Text>
+          </Box>
+        )
+      })}
+    </Box>
+  )
+}

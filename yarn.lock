@@ -1038,6 +1038,51 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nju33/create-.eslintrc.js@workspace:packages/create-.eslintrc.js":
+  version: 0.0.0-use.local
+  resolution: "@nju33/create-.eslintrc.js@workspace:packages/create-.eslintrc.js"
+  dependencies:
+    "@nju33/create-__components": ^0.0.0
+    "@nju33/create-__helpers": ^0.0.0
+    "@types/deepmerge": ^2.2.0
+    "@types/ejs": ^3.0.6
+    "@types/node": ^14.14.41
+    "@types/ramda": ^0.27.40
+    "@types/react": ^17.0.3
+    deepmerge: ^4.2.2
+    ejs: ^3.1.6
+    ink: ^3.0.8
+    ramda: ^0.27.1
+    react: ^17.0.2
+    typescript: ^4.2.4
+  bin:
+    create-.eslintrc.js: out/bin.js
+  languageName: unknown
+  linkType: soft
+
+"@nju33/create-__components@^0.0.0, @nju33/create-__components@workspace:packages/components":
+  version: 0.0.0-use.local
+  resolution: "@nju33/create-__components@workspace:packages/components"
+  dependencies:
+    "@types/react": ^17.0.3
+    figures: ^3.2.0
+    ink: ^3.0.8
+    react: ^17.0.2
+    term-size: ^2.2.1
+    typescript: ^4.2.4
+  languageName: unknown
+  linkType: soft
+
+"@nju33/create-__helpers@^0.0.0, @nju33/create-__helpers@workspace:packages/helpers":
+  version: 0.0.0-use.local
+  resolution: "@nju33/create-__helpers@workspace:packages/helpers"
+  dependencies:
+    "@types/prettier": ^2.2.3
+    prettier: ^2.2.1
+    typescript: ^4.2.4
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4
   resolution: "@nodelib/fs.scandir@npm:2.1.4"
@@ -1291,6 +1336,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/deepmerge@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@types/deepmerge@npm:2.2.0"
+  dependencies:
+    deepmerge: "*"
+  checksum: a2a38a7735ff7b560ba59ad35560e23e1c7fb366d64845fbfc2feef4827115cb280986fd0d11f674c6119e8bb4942fc5f764df2339895c325fd31df88ef2375a
+  languageName: node
+  linkType: hard
+
+"@types/ejs@npm:^3.0.6":
+  version: 3.0.6
+  resolution: "@types/ejs@npm:3.0.6"
+  checksum: 23543eee90808dda1a92fb418c9bf75269eae7fce4db9ac4e18f99595bc0d281819b499f6256f7db110b0d5eaa7e57b4d84a07dab1f94a64669acfc9fea50b93
+  languageName: node
+  linkType: hard
+
 "@types/eslint@npm:^7.2.10":
   version: 7.2.10
   resolution: "@types/eslint@npm:7.2.10"
@@ -1345,7 +1406,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^14.14.41":
   version: 14.14.41
   resolution: "@types/node@npm:14.14.41"
   checksum: 37dfb639644c8ee9b9846106834983f590d494b855e74645a4f169ea24199f7559366d25f6e72e83ba940b59eb6370e002bd53963d098d6d9fdf935a37011417
@@ -1366,6 +1427,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prettier@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "@types/prettier@npm:2.2.3"
+  checksum: b7e80288f9f776caca84391a7a217b8baac6b4fce00bb9701af69299d465cb8faf17466f0af0803970c74d2c191767ca729a6d21a2f7e2ce552d1ef6cc0d653a
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.3
   resolution: "@types/prop-types@npm:15.7.3"
@@ -1377,6 +1445,15 @@ __metadata:
   version: 1.5.4
   resolution: "@types/q@npm:1.5.4"
   checksum: 1a19cf2c41648b862bd25a4c26ba33dc7206f14fcf50c5b78031b59090d21176e703cd10aff8af409eafbefcebb288607d30af765ee3859637cf3fae6e875648
+  languageName: node
+  linkType: hard
+
+"@types/ramda@npm:^0.27.40":
+  version: 0.27.40
+  resolution: "@types/ramda@npm:0.27.40"
+  dependencies:
+    ts-toolbelt: ^6.15.1
+  checksum: e970bfb9814b96bf5da955688e5dc6de582b56974ba4378c9a5dc46dcb9d0f3378aae420cceec21e154931242007cdaddc8daf8158b255a0b790164897e2aac4
   languageName: node
   linkType: hard
 
@@ -1852,6 +1929,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"async@npm:0.9.x":
+  version: 0.9.2
+  resolution: "async@npm:0.9.2"
+  checksum: 78c0aad8add0b84ccf9bde90d20a9cd20146e3734a4c9ac9bfb3a30d1b7df12b7d95c13119af825a89480210c02f7ffee38ac07c13ac43abd6636691b982b591
+  languageName: node
+  linkType: hard
+
 "asynckit@npm:^0.4.0":
   version: 0.4.0
   resolution: "asynckit@npm:0.4.0"
@@ -2204,7 +2288,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^2.0.0, chalk@npm:^2.4.1":
+"chalk@npm:^2.0.0, chalk@npm:^2.4.1, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
   dependencies:
@@ -2442,18 +2526,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"components@workspace:packages/components":
-  version: 0.0.0-use.local
-  resolution: "components@workspace:packages/components"
-  dependencies:
-    chalk: ^4.1.0
-    ink: ^3.0.8
-    log-symbols: ^5.0.0
-    react: ^17.0.2
-    term-size: ^2.2.1
-  languageName: unknown
-  linkType: soft
-
 "concat-map@npm:0.0.1":
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
@@ -2656,26 +2728,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-eslint@workspace:packages/create-eslint":
-  version: 0.0.0-use.local
-  resolution: "create-eslint@workspace:packages/create-eslint"
-  dependencies:
-    "@types/react": ^17.0.3
-    ink: ^3.0.8
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
-"create-prettier@workspace:packages/create-prettier":
-  version: 0.0.0-use.local
-  resolution: "create-prettier@workspace:packages/create-prettier"
-  dependencies:
-    "@types/react": ^17.0.3
-    ink: ^3.0.8
-    react: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
 "create-require@npm:^1.1.0":
   version: 1.1.1
   resolution: "create-require@npm:1.1.1"
@@ -2690,7 +2742,7 @@ __metadata:
     "@commitlint/cli": ^12.1.1
     "@commitlint/config-conventional": ^12.1.1
     "@types/eslint": ^7.2.10
-    "@types/react": ^17.0.3
+    "@types/node": ^14.14.41
     "@typescript-eslint/eslint-plugin": ^4.22.0
     "@typescript-eslint/parser": ^4.22.0
     eslint: ^7.24.0
@@ -2698,6 +2750,7 @@ __metadata:
     eslint-config-standard: ^16.0.2
     eslint-config-standard-react: ^11.0.1
     eslint-config-standard-with-typescript: ^20.0.0
+    eslint-import-resolver-node: ^0.3.4
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jest: ^24.3.5
     eslint-plugin-node: ^11.1.0
@@ -2714,6 +2767,7 @@ __metadata:
     lint-staged: ^10.5.4
     prettier: ^2.2.1
     ts-node: ^9.1.1
+    tsconfig-paths: ^3.9.0
     typescript: ^4.2.4
   languageName: unknown
   linkType: soft
@@ -2997,6 +3051,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deepmerge@npm:*, deepmerge@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "deepmerge@npm:4.2.2"
+  checksum: 85abf8e0045ee280996e7d2396979c877ef0741e413b716e42441110e0a83ac08098b2a49cea035510060bf667c0eae3189b2a52349f5fa4b000c211041637b1
+  languageName: node
+  linkType: hard
+
 "defaults@npm:^1.0.3":
   version: 1.0.3
   resolution: "defaults@npm:1.0.3"
@@ -3223,6 +3284,17 @@ __metadata:
     jsbn: ~0.1.0
     safer-buffer: ^2.1.0
   checksum: 5b4dd05f24b2b94c1bb882488dba2b878bb5b83182669aa71fbdf53c6941618180cb226c4eb9a3e2fa51ad11f87b5edb0a7d7289cdef468ba2e6024542f73f07
+  languageName: node
+  linkType: hard
+
+"ejs@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "ejs@npm:3.1.6"
+  dependencies:
+    jake: ^10.6.1
+  bin:
+    ejs: ./bin/cli.js
+  checksum: cb77a9368e50c7b11cb8d64c911397a7bf8f9f6d155474bc64154fd1d0ccf896de28a01d5e6ce135470ede038ca7dc02a83b8c0a904277eaef605cce4ab46dfb
   languageName: node
   linkType: hard
 
@@ -3985,6 +4057,15 @@ __metadata:
   version: 8.1.0
   resolution: "file-type@npm:8.1.0"
   checksum: 2c7ee6e918913c92c70db2484f2590e5e1741488783cd28eb83a8802d1cf84e861a92d40687d0e7e30fd6dd61c09fbeea6e90e1ee1bc8759088fa553917ebb7f
+  languageName: node
+  linkType: hard
+
+"filelist@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "filelist@npm:1.0.2"
+  dependencies:
+    minimatch: ^3.0.4
+  checksum: f8bf29d31779dd04ee9e5d225e5a669920d5443f40b38fb5ecc8442ac29848a6f8bc3c937cb8ba78f5ae0d819dad52f4750d23c4dd1b2a51370aa67027d95c0c
   languageName: node
   linkType: hard
 
@@ -5326,13 +5407,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-unicode-supported@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "is-unicode-supported@npm:1.0.0"
-  checksum: 800888b3ff5108f286b1a2d66620ab62db37c3fa52192abfb600bb28514124f7d2456a239d5ec57edc02d0d268448b61951679f30d3e79bd31943e6885d8c4c4
-  languageName: node
-  linkType: hard
-
 "is-utf8@npm:^0.2.0":
   version: 0.2.1
   resolution: "is-utf8@npm:0.2.1"
@@ -5375,6 +5449,20 @@ __metadata:
     has-to-string-tag-x: ^1.2.0
     is-object: ^1.0.1
   checksum: 2c63877b4e0cbd7af36502ac08cb7814393e11871324967117f43dda57cbeab8a192f3bfca8bfa088f3c9886a93518f9d77136043ef2c65054b541eb6bd9a7c6
+  languageName: node
+  linkType: hard
+
+"jake@npm:^10.6.1":
+  version: 10.8.2
+  resolution: "jake@npm:10.8.2"
+  dependencies:
+    async: 0.9.x
+    chalk: ^2.4.2
+    filelist: ^1.0.1
+    minimatch: ^3.0.4
+  bin:
+    jake: ./bin/cli.js
+  checksum: c60d3f491ce59bba09b8a2ee351122eb6dd19a6826347de5ec4e94ddee5c5e70e14120c14ce6fc2efa360d0db12d7a28a1044d7aa084414dd695ce154fb87d9e
   languageName: node
   linkType: hard
 
@@ -5808,16 +5896,6 @@ __metadata:
     chalk: ^4.1.0
     is-unicode-supported: ^0.1.0
   checksum: 57be4aeb6a6ecb81d8267600836f81928da1d846ad13384a9a22d179e27590fdb680946edbd15642a31735183adaa3dc6aae2d20e619a19fa0d54e1aee945915
-  languageName: node
-  linkType: hard
-
-"log-symbols@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "log-symbols@npm:5.0.0"
-  dependencies:
-    chalk: ^4.1.0
-    is-unicode-supported: ^1.0.0
-  checksum: 71a7b27c4a4e87c47765e5d345a3ed64e8ec58ed699dd5d1f003b13a44951f8ddd288275673227664a121b473d4ec1f899282704b2ecb1407f79bb9f45eba7c3
   languageName: node
   linkType: hard
 
@@ -7448,6 +7526,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ramda@npm:^0.27.1":
+  version: 0.27.1
+  resolution: "ramda@npm:0.27.1"
+  checksum: 9aa4655dffdca66f8ba2ceabebe51996d6c75f6a2fb901a150885ace22c5950c211dd589868780b7a91c1443771702634d4370e7572d8c63c60e4b4f61aa57a9
+  languageName: node
+  linkType: hard
+
 "react-devtools-core@npm:^4.6.0":
   version: 4.12.4
   resolution: "react-devtools-core@npm:4.12.4"
@@ -8914,6 +8999,13 @@ resolve@~1.19.0:
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
   checksum: a90db4a342872cd0e7a80babdfcb15d2f7c06e700d735003098f7cc79db575c3380580c58a19ae0d0eaab553af083651d4237060c92170e6f8ac4e64693113ea
+  languageName: node
+  linkType: hard
+
+"ts-toolbelt@npm:^6.15.1":
+  version: 6.15.5
+  resolution: "ts-toolbelt@npm:6.15.5"
+  checksum: d2f585ee3439ae7a72dd7c00630491195b2a4f34107c595d567242482b9fa911b5a9b5921fb4984506c2f7d8efce61351c7f48519438df67b6c0a8dcd40c862c
   languageName: node
   linkType: hard
 
