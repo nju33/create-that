@@ -2,11 +2,11 @@
 
 That is the following like.
 
-- eslint (as `create-.eslintrc.js` package)
-- prettier (as `create-.prettierrc.js` package)
-- commitlint (as `create-.commitlintrc.js` package)
-- husky (as `create-.huskyrc` package)
-- lint-staged (as `create-.lintstagedrc` package)
+- eslint (as `create-.eslintrc.js` package [![](https://badgen.net/npm/v/@nju33/create-.eslintrc.js)](https://www.npmjs.com/package/@nju33/create-.eslintrc.js))
+- prettier (as `create-.prettierrc.js` package [![](https://badgen.net/npm/v/@nju33/create-.prettierrc.js)](https://www.npmjs.com/package/@nju33/create-.prettierrc.js))
+- commitlint (as `create-.commitlintrc.js` package [![](https://badgen.net/npm/v/@nju33/create-.commitlintrc.js)](https://www.npmjs.com/package/@nju33/create-.commitlintrc.js))
+- husky (as `create-.huskyrc` package [![](https://badgen.net/npm/v/@nju33/create-.huskyrc)](https://www.npmjs.com/package/@nju33/create-.huskyrc))
+- lint-staged (as `create-.lintstagedrc` package [![](https://badgen.net/npm/v/@nju33/create-.lintstagedrc)](https://www.npmjs.com/package/@nju33/create-.lintstagedrc))
 
 ## Gitpod variables
 
