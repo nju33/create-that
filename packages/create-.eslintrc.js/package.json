@@ -1,13 +1,19 @@
 {
   "name": "@nju33/create-.eslintrc.js",
-  "version": "0.0.0",
+  "version": "0.0.1-2",
   "bin": "out/bin.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "out"
+  ],
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@nju33/create-__components": "^0.0.0",
-    "@nju33/create-__helpers": "^0.0.0",
+    "@nju33/create-__components": "^0.0.1-1",
+    "@nju33/create-__helpers": "^0.0.1-0",
     "deepmerge": "^4.2.2",
     "ejs": "^3.1.6",
     "ink": "^3.0.8",

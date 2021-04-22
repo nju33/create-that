@@ -83,8 +83,8 @@ export function Template({
     }
 
     if (key.return) {
-      fs.writeFileSync(path.join('/tmp', '.eslintrc.js'), code, 'utf-8')
-      process.chdir('/tmp')
+      fs.writeFileSync(path.join(process.cwd(), '.eslintrc.js'), code, 'utf-8')
+      process.chdir(process.cwd())
       execSync(`bash -c '${installCommand}'`)
       process.exit()
     }
