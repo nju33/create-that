@@ -1,0 +1,38 @@
+{
+  "include": [".*.js", "*.js", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react",
+    "rootDir": "src",
+    "outDir": "out",
+    "declaration": true,
+    "sourceMap": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@nju33/create-__components": ["../components/src/index.ts"],
+      "@nju33/create-__helpers": ["../helpers/src/index.ts"]
+    },
+    "esModuleInterop": true,
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "references": [
+    {
+      "path": "../components"
+    },
+    {
+      "path": "../helpers"
+    }
+  ]
+}

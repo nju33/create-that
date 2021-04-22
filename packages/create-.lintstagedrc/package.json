@@ -1,0 +1,34 @@
+{
+  "name": "@nju33/create-.lintstagedrc",
+  "version": "0.0.1-0",
+  "bin": "out/bin.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "out"
+  ],
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register -T src/bin.ts",
+    "prebuild": "yarn cleanup",
+    "build": "tsc",
+    "publish": "yarn npm publish",
+    "cleanup": "rm -rf out"
+  },
+  "dependencies": {
+    "@nju33/create-__components": "^0.0.1-4",
+    "@nju33/create-__helpers": "^0.0.1-3",
+    "ink": "^3.0.8",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/deepmerge": "^2.2.0",
+    "@types/ejs": "^3.0.6",
+    "@types/node": "^14.14.41",
+    "@types/ramda": "^0.27.40",
+    "@types/react": "^17.0.3",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.2.4"
+  }
+}
