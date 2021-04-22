@@ -4,6 +4,8 @@ That is the following like.
 
 - eslint (as `create-.eslintrc.js` package)
 - prettier (as `create-.prettierrc.js` package)
+- husky (as `create-.huskyrc` package)
+
 ## Gitpod variables
 
 - `GIT_USER_SIGNINGKEY` is a sign necessary when you do `git commit`
