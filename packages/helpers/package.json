@@ -1,6 +1,6 @@
 {
   "name": "@nju33/create-__helpers",
-  "version": "0.0.1-2",
+  "version": "0.0.1-3",
   "main": "out/index.js",
   "publishConfig": {
     "access": "public"
