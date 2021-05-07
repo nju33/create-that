@@ -1,8 +1,7 @@
 import { extendPartialBy } from '@nju33/create-__helpers'
 
-
 export const configAroundJest = {
-  dependencies: ['eslint-plugin-jest'],
+  dependencies: ['eslint-plugin-jest', 'eslint-plugin-testing-library'],
   settings: {
     env: {
       jest: true
