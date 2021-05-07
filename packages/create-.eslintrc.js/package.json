@@ -1,6 +1,6 @@
 {
   "name": "@nju33/create-.eslintrc.js",
-  "version": "0.0.1-6",
+  "version": "0.0.1-7",
   "bin": "out/bin.js",
   "publishConfig": {
     "access": "public"
