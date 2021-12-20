@@ -1,5 +1,7 @@
 # Create That
 
+![This repository is deprecated](https://badgen.net/badge/status/deprecated/yellow). The alternative is you can reference at https://bit.dev/aryli/create-that.
+
 That is the following like.
 
 - eslint (as `create-.eslintrc.js` package [![](https://badgen.net/npm/v/@nju33/create-.eslintrc.js)](https://www.npmjs.com/package/@nju33/create-.eslintrc.js))
